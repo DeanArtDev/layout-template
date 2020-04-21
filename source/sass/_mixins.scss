@@ -15,8 +15,14 @@
 }
 
 
-@mixin media($screen, $type-width, $width) {
-  @media #{$screen} and (#{$type-width}-width: #{$width}px) {
+@mixin mediaMobileFirst($width: 576) {
+  @media screen and (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin mediaDesctopFirst($width: 1200) {
+  @media screen and (min-width: #{$width}px) {
     @content;
   }
 }
