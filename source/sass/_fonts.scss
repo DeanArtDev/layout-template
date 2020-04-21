@@ -1,0 +1,4 @@
+@import "_mixins";
+
+// relatively to the folder css
+@include font-face("BloggerSans", "../fonts/bloggersans-light", 300, normal, swap);
